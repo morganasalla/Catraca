@@ -29,6 +29,7 @@ int main()
 		{
 			break;
 		}
+
 		passageiros >> a.horae;
 		passageiros >> a.mine;
 
