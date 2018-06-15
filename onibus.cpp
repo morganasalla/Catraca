@@ -16,7 +16,7 @@ emplo de arquivo de dados:
 int main()
 {
 	ifstream passageiros;
-	roleta a;,
+	roleta a;
 
 	passageiros.open("passageiros.csv");
 
@@ -32,7 +32,8 @@ int main()
 		passageiros >> a.horae;
 		passageiros >> a.mine;
 
-		//cout << a.getTempoHoras() 
+		cout << a.tipo << " " << a.horae << " " << a.mine << endl;
+ 
 			//<< ":" << a.getTempoMinutos() 
 			//<< endl;
 	}

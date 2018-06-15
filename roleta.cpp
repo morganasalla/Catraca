@@ -1,11 +1,10 @@
-\\ 
 #include "roleta.h"
 using namespace std;
-void roleta::condi() 
+/* void roleta::condi() 
 
 
 {
-	if(codigo 0001)
+	if(codigo == "0001")
 	   cin>>aluno;
 	        else if(codigo 0010)
 	          cin>>PA;
@@ -16,14 +15,15 @@ void roleta::condi()
 	
 }
 
-int Aluguel::getTempoHoras()
-{
+//int Aluguel::getTempoHoras()
+//{
     //calcTempo();
-	return tempo / 60;
+//	return tempo / 60;
 }
 
-int roleta::getTempoMinutos() 
-{
+//int roleta::getTempoMinutos() 
+//{
 	//calcTempo();
-	return tempo % 60;
-}
+	//return tempo % 60;
+//}
+*/
