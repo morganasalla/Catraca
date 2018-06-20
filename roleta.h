@@ -8,9 +8,10 @@ class roleta {
 
 public:
 
-	string tipo;
+	int tipo;
 	int horae;
 	int mine;
+	
 	
 	//int idoso(); 
 	//int passageiro();

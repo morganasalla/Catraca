@@ -1,5 +1,17 @@
 #include "roleta.h"
 using namespace std;
+
+
+
+
+
+
+
+
+
+
+
+
 /* void roleta::condi() 
 
 
