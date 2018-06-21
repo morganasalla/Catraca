@@ -15,24 +15,17 @@ emplo de arquivo de dados:
 
 int main()
 {
-	int tot_idoso=0;
+	int tot_idoso=0, tot_estudante=0, tot_PA=0,opcao;
 	ifstream passageiros;
 	roleta a;
 
 	passageiros.open("passageiros.csv");
-
-	/*if(0001){
-	   tot_estudantes=estudante+1;
-		cout<<"o numero total de estudante na viagem:"<<tot_estudantes<<endl;*/
-		
-	 
-	//else{
-	//    tot_pagante=pagante+1;
-		//cout<<"o numero total de estudante na viagem:"<<tot_pagante<<endl;
-	//}
-
-
 	//cout << "\nnome ficticio-carro 0654\n" << endl;
+
+	cout<<"Viação POA, carro:0000\n\n"<<endl;
+
+	cout<<"qual opção deseja: \n1 mostrar quantidade de passageiros,\n2 mostrar toda a transiçaõ"<<endl;
+	cin>>opcao;
 
   	while ( ! passageiros.eof() )
  
@@ -48,18 +41,38 @@ int main()
 		passageiros >> a.horae;
 		passageiros >> a.mine;
 
-		cout << a.tipo << " " << a.horae << " " << a.mine << endl;
+		
  
 		//<< ":" << a.getTempoMinutos() 
 		//<< endl;
-
-                if(a.tipo == 1){
-	   	tot_idoso=tot_idoso+1;
 		
+
+		switch (opcao){
+
+		case 1:
+                if (a.tipo == 1){
+	   	   tot_idoso=tot_idoso+1;
+		   cout<<"o numero total de idoso na viagem:"<<tot_idoso<<endl;
 		}
-	}
-	
-	cout<<"	o numero total de idoso na viagem:"<<tot_idoso<<endl;
+		else if (a.tipo == 2){
+		   tot_estudante=tot_estudante+1;
+		   cout<<"o numero total de estudantes na viagem:"<<tot_estudante<<endl;
+		}
+		else if (a.tipo == 3){
+		   tot_PA=tot_PA+1;
+		   cout<<"o numero total de pagantes na viagem:"<<tot_PA<<endl;{
+		
+		break;
+		
+		case 2:
+		    cout << a.tipo << " " << a.horae << " " << a.mine << endl;
+		break;
+		}
+  	      }
+
+           }
+         }	
+
 
 	passageiros.close();
 
